@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="SlideFunder">
+    <title>{{ title }} | SlideFunder</title>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/stylesheets/css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">SlideFunder</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <div class="pull-right"> 
+                <ul class="nav navbar-nav">
+                  <li><a href="/browse">Browse</a></li>
+                  <li><a href="/propose">Propose</a></li>
+                  <li><a href="/signin">Sign In</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/stylesheets/js/holder.js"></script>
+  </body>
+</html>
